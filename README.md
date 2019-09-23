@@ -28,20 +28,29 @@ For Python 3.5+, you can also use the angle backend instead of glew. This can be
 8)	Install KIVY : 
 
   python -m pip install kivy==1.11.1
+
 9)	There are 3  Kivy Dependencies :
  9.1) getstreamer  for audio and video.
  9.2) glew 
  9.3) sdl2 for control and OpenGL.
+
 10)	Both the python and the Python\Scripts directories must be on the path. They must be on the path every time you recompile kivy.
+
 11)	Ensure you have the latest pip and wheel with :
  python -m pip install --upgrade pip wheel setuptools
+
 12)	Set the environment variables. On windows do:
   set USE_SDL2=1
  set USE_GSTREAMER=1
+
 13)	Install the other dependencies as well as their dev versions (you can skip gstreamer and gstreamer_dev if you aren’t going to use video/audio). we don’t pin the versions of the dependencies like for the stable kivy because we want the latest:
  python -m pip install Cython==0.29.10 docutils pygments pypiwin32 kivy_deps.sdl2 kivy_deps.glew kivy_deps.gstreamer kivy_deps.glew_dev kivy_deps.sdl2_dev kivy_deps.gstreamer_dev
+
 14)	Start installation of Kivy cloned or downloaded and extracted from GitHub. You should be in the root directory where kivy is extracted containing the setup.py file:
  python -m pip install
+
 15)	For Any Quarry, refer  https://kivy.org/doc/stable/installation/installation-windows.html
+
 16)	Python Documentation Link  https://docs.python.org/3/tutorial/index.html
+
 17)	Kivy PYPI Link  https://pypi.org/project/Kivy/
